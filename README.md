@@ -23,6 +23,9 @@ The simplest way of getting started is to download the side-channel traces linke
 - Step 7: you may want to use the C++ multi-precision log probability calculator (Boost C++ library required) in order to convert the validation accuracy values and the size of the validation set into log probabilities
 - Step 8: Repeat from Step 4 for further analyses on the same trace sets
 
+## Sensitivity Analysis Troubleshooting
+In our experience it can be difficult at times to obtain nice and smooth sensitivity analysis results (even when the training and validation accuracy during DL-LA look good). Therefore, we want to provide a couple of hints here. First of all the sensitivity analysis performed in our scripts is related to the training set and the training loss only. If you want to improve the sensitivity analysis results increase the number of training traces (and decrease the number of validation traces to save time). Furthermore, we have implemented two different variants of the sensitivity analysis for the MLP network. The first is based on the network inputs (this is also applicable to the CNN but for SA the MLP should be favored) and the second one is based on the first layer weights. Try both and compare the results. In our experience, the inputs-based sensitivity is often superior. Finally, the number of epochs the network is trained plays a very significant role in the sensitivity analysis result. Make sure to try different values for the number of epochs (e.g., 5, 10, 25, 50, 100) if computationally affordable. If not, values around 10 usually give decent results.
+
 ## Contact and Support
 Please contact Thorben Moos (thorben.moos@rub.de) if you have any questions, comments or if you found a bug that should be corrected.
 
