@@ -1,0 +1,21 @@
+# Define your trace sets here by giving the following parameters:
+## path: Path to the trace files in your filesystem
+## nrfiles: Number of files
+## tracesinfile: Number of traces per file
+## tracelen: Number of sample points per trace
+## peakdist: Minimum distance between consecutive peaks in the trace
+## struct: File structure of your trace data
+FPGA_PRESENT_RANDOMIZED_CLOCK:
+  path: Traces/FPGA_PRESENT_RANDOMIZED_CLOCK
+  nrfiles: 1
+  tracesinfile: 100000
+  tracelen: 5000
+  peakdist: 42
+  struct: "[('trace','i1',5000),('group','u1')]"
+FPGA_PRESENT_TI_MISALIGNED:
+  path: Traces/FPGA_PRESENT_TI_MISALIGNED
+  nrfiles: 50
+  tracesinfile: 100000
+  tracelen: 5000
+  peakdist: 167
+  struct: "[('trace','i1',5000),('group','u1')]"
