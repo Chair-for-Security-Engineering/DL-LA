@@ -6,8 +6,8 @@ DL-LA is a leakage assessment methodology based on deep learning. Simply put, a 
 
 ## Content of the Repository
 In this repository we share simple Python (and C++) scripts that allow you to perform deep learning leakage assessment on your own side-channel data and partially reproduce the results reported in the [DL-LA](https://eprint.iacr.org/2019/505.pdf) paper. Please note, that all given scripts are reduced to their basic functionality and have been kept short and simple on purpose. To use the scripts in this repository a working installation of *TensorFlow* and *Keras* is required. The scripts have been tested using *tensorflow-gpu 2.1.0* and *keras-gpu version 2.4.3*. For reproducibility of (a part of) the experimental results presented in the paper we have hosted the underlying leakage traces for two case studies, namely CS3 and CS5 (see [DL-LA](https://eprint.iacr.org/2019/505.pdf)). Those trace files can be downloaded here:
-- CS3: Serialized PRESENT implementation, randomized clock (heavily misaligned), measured on SAKURA-G FPGA board: [LINK](https://ruhr-uni-bochum.sciebo.de/s/uapVSe9CxOxxwis)
-- CS5: Serialized PRESENT threshold implementation, bad trigger (slightly misaligned), measured on SAKURA-G FPGA board: [LINK](https://ruhr-uni-bochum.sciebo.de/s/7kNH7o8nPnmNPTI)
+- CS3: Serialized PRESENT implementation, randomized clock (heavily misaligned), measured on SAKURA-G FPGA board: [LINK](https://drive.google.com/file/d/1gYerTpnJF_u-BrP5ny0c6rcgbuKQlE4h/view)
+- CS5: Serialized PRESENT threshold implementation, bad trigger (slightly misaligned), measured on SAKURA-G FPGA board: [LINK](https://drive.google.com/file/d/1dWPx-dp9fKA9i0yZMf31ue7x74TYnNQa/view)
 
 ## Getting Started
 The simplest way of getting started is to download the side-channel traces linked above (and in the respective subfolders). However, you may also start right away with your own SCA data. In any case, just follow the steps below to get everything up and running:
